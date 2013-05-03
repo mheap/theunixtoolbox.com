@@ -1,0 +1,24 @@
+// Set up your global variables
+@import "setup";
+
+// Call in base styles
+@import "base/mixins";
+@import "base/functions";
+@import "base/base";
+@import "base/syntax";
+
+
+
+@import "utils/clearfix";
+@import "utils/contain";
+@import "utils/hoz";
+@import "utils/hidden";
+@import "utils/island";
+@import "utils/media";
+@import "utils/push";
+
+// Modules
+@import "modules/header";
+@import "modules/footer";
+@import "modules/post";
+@import "modules/credits";

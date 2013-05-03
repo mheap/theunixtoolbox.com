@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description></description>
+    <link></link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>CDPATH</title>
+      <description>&lt;p&gt;CDPATH is an environment variable that changes how the &lt;code&gt;cd&lt;/code&gt; command works. Normally when you try and cd
+into a directory, it will only try and change to the path specified from the current directory. If you spend a
+lot of time working in specific folders, it might be useful to assume that your search path for &lt;code&gt;cd&lt;/code&gt; starts from one of those folders.&lt;/p&gt;
+
+&lt;p&gt;For example, I spend a lot of time working in &lt;code&gt;/var/www&lt;/code&gt;. Instead of typing cd /var/www/example.com all the time, I want to be able to
+just type &lt;code&gt;cd example.com&lt;/code&gt; and have it know what I mean. Here's how to set that up:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;CDPATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;.:~:/var/www
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now, you can just type &lt;code&gt;cd example.com&lt;/code&gt; and it will look for &lt;code&gt;./example.com&lt;/code&gt; then &lt;code&gt;/var/www/example.com&lt;/code&gt;, stopping whenever it finds a match
+or runs out of search locations.&lt;/p&gt;
+
+&lt;p&gt;You can have as many base search paths as you like. Here's one that includes &lt;code&gt;/etc&lt;/code&gt; as a search path too.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;CDPATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;.:~:/var/www:/etc
+
+vagrant@precise64:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;pwd&lt;/span&gt;
+/home/vagrant
+
+vagrant@precise64:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;example.com
+/var/www/example.com
+
+vagrant@precise64:/var/www/example.com&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;mysql
+/etc/mysql
+
+vagrant@precise64:/etc/mysql&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;Downloads
+/home/vagrant/Downloads
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+
+</description>
+      <pubDate>Fri, 03 May 2013</pubDate>
+      <link>/cdpath</link>
+      <guid isPermaLink="true">/cdpath</guid>
+    </item>
+    
+  </channel>
+</rss>
+

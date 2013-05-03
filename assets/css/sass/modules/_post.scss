@@ -1,0 +1,40 @@
+/* Post
+   ========================================================================== */
+
+.post {
+  padding-bottom: 1.5em;
+  padding-top: 2.75em;
+
+  & + .post {
+    border-top: .25em solid $brand-secondary;
+  }
+
+}
+
+.post__title a {
+  color: $base-text-color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $brand;
+  }
+}
+
+.post__date {
+  border-bottom: 1px solid #ccc;
+  display: inline-block;
+  margin-bottom: 1.5em;
+  padding: 0 .5em .25em 0;
+}
+
+.post .highlight {
+  background-color: whiteSmoke;
+  border-left: .4em solid #eee;
+  padding: 1em;
+  border-radius: .25em;
+}
+
+.post .highlight pre:last-of-type {
+  margin-bottom: 0;
+}
