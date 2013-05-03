@@ -116,7 +116,7 @@ table {
  ========================================================================== */
 .hx, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, .h1-l, .h1-xl {
   margin: 0 0 1em;
-  line-height: 1.1;
+  line-height: 1.4;
   font-weight: bold;
   -webkit-font-smoothing: antialiased;
 }
@@ -177,7 +177,6 @@ p, blockquote, ul, ol, dl, menu, pre {
 
 .highlight {
   background: #ffffff;
-  margin-bottom: 1.6em;
 }
 
 .highlight .c {
@@ -674,6 +673,10 @@ p, blockquote, ul, ol, dl, menu, pre {
   border-radius: .25em;
 }
 
+.post pre {
+  overflow: auto;
+}
+
 .post .highlight pre:last-of-type {
   margin-bottom: 0;
 }
@@ -687,12 +690,4 @@ p, blockquote, ul, ol, dl, menu, pre {
 .credit__copyright {
   font-size: 0.75em;
   margin-bottom: 0;
-}
-
-code {
-  background: whiteSmoke;
-}
-
-pre {
-  overflow: auto;
 }
