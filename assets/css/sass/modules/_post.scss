@@ -2,8 +2,7 @@
    ========================================================================== */
 
 .post {
-  padding-bottom: 1.5em;
-  padding-top: 2.75em;
+   padding: 2.5em 0;
 
   & + .post {
     border-top: .25em solid $brand-secondary;
@@ -37,4 +36,8 @@
 
 .post .highlight pre:last-of-type {
   margin-bottom: 0;
+}
+
+.post .highlight:last-of-type {
+   margin-bottom: 0;
 }
