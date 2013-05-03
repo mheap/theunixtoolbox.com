@@ -2,8 +2,7 @@
    ========================================================================== */
 
 .post {
-  padding-bottom: 1.5em;
-  padding-top: 2.75em;
+   padding: 2.5em 0;
 
   & + .post {
     border-top: .25em solid $brand-secondary;
@@ -12,6 +11,7 @@
 }
 
 .post__title a {
+   /* consider removing this as it obscures the fact title on home page is the link to the post - breaks link colour convention */
   color: $base-text-color;
 
   &:hover,
@@ -37,4 +37,12 @@
 
 .post .highlight pre:last-of-type {
   margin-bottom: 0;
+}
+
+.post .highlight:last-of-type {
+   margin-bottom: 0;
+}
+
+.post p:last-of-type {
+   margin-bottom: 0;
 }
