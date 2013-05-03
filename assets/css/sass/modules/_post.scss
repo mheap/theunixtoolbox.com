@@ -11,6 +11,7 @@
 }
 
 .post__title a {
+   /* consider removing this as it obscures the fact title on home page is the link to the post - breaks link colour convention */
   color: $base-text-color;
 
   &:hover,
