@@ -692,3 +692,7 @@ p, blockquote, ul, ol, dl, menu, pre {
 code {
   background: whiteSmoke;
 }
+
+pre {
+  overflow: auto;
+}
