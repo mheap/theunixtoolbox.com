@@ -171,7 +171,7 @@ small,
 /*
 * Block-level margins
 */
-p, blockquote, ul, ol, dl, menu, pre {
+p, blockquote, ul, ol, dl, menu {
   margin: 0 0 1.6em;
 }
 
@@ -652,7 +652,6 @@ p, blockquote, ul, ol, dl, menu, pre {
 }
 
 .post__title a {
-  /* consider removing this as it obscures the fact title on home page is the link to the post - breaks link colour convention */
   color: #3e3e3e;
 }
 .post__title a:hover, .post__title a:focus, .post__title a:active {
@@ -678,16 +677,12 @@ p, blockquote, ul, ol, dl, menu, pre {
   overflow: auto;
 }
 
-.post .highlight pre:last-of-type {
+.post > :last-child {
   margin-bottom: 0;
 }
 
-.post .highlight:last-of-type {
-  margin-bottom: 0;
-}
-
-.post p:last-of-type {
-  margin-bottom: 0;
+code {
+  background: whiteSmoke;
 }
 
 /* Site Credits

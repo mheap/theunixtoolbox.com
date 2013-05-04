@@ -11,7 +11,6 @@
 }
 
 .post__title a {
-   /* consider removing this as it obscures the fact title on home page is the link to the post - breaks link colour convention */
   color: $base-text-color;
 
   &:hover,
@@ -40,14 +39,10 @@
   overflow: auto;
 }
 
-.post .highlight pre:last-of-type {
-  margin-bottom: 0;
+.post > :last-child {
+  margin-bottom:0;
 }
 
-.post .highlight:last-of-type {
-   margin-bottom: 0;
-}
-
-.post p:last-of-type {
-   margin-bottom: 0;
+code {
+  background: whiteSmoke;
 }

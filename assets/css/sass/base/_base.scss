@@ -187,6 +187,6 @@ small,
 * Block-level margins
 */
 
-p, blockquote, ul, ol, dl, menu, pre {
+p, blockquote, ul, ol, dl, menu {
   margin: 0 0 $base-line-height + em;
 }
