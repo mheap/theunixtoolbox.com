@@ -621,7 +621,7 @@ p, blockquote, ul, ol, dl, menu, pre {
    ========================================================================== */
 .site-head {
   border-bottom: 0.25em solid #7eca72;
-  padding-bottom: 1.5em;
+  padding-bottom: 2.5em;
 }
 
 .site-logo {
@@ -645,14 +645,14 @@ p, blockquote, ul, ol, dl, menu, pre {
 /* Post
    ========================================================================== */
 .post {
-  padding-bottom: 1.5em;
-  padding-top: 2.75em;
+  padding: 2.5em 0;
 }
 .post + .post {
   border-top: 0.25em solid #7eca72;
 }
 
 .post__title a {
+  /* consider removing this as it obscures the fact title on home page is the link to the post - breaks link colour convention */
   color: #3e3e3e;
 }
 .post__title a:hover, .post__title a:focus, .post__title a:active {
@@ -671,6 +671,7 @@ p, blockquote, ul, ol, dl, menu, pre {
   border-left: .4em solid #eee;
   padding: 1em;
   border-radius: .25em;
+  margin-bottom: 1.6em;
 }
 
 .post pre {
@@ -678,6 +679,14 @@ p, blockquote, ul, ol, dl, menu, pre {
 }
 
 .post .highlight pre:last-of-type {
+  margin-bottom: 0;
+}
+
+.post .highlight:last-of-type {
+  margin-bottom: 0;
+}
+
+.post p:last-of-type {
   margin-bottom: 0;
 }
 
