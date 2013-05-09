@@ -4,3 +4,6 @@ markdown: rdiscount
 pygments: true
 permalink: /:title
 exclude: [ README.md ]
+name: The Unix Toolbox
+description: Tools + tricks from the *nix command line that are so good, you'll wonder how you ever lived without them
+link: http://theunixtoolbox.com
