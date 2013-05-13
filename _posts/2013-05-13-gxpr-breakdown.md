@@ -39,6 +39,8 @@ The `-e` flag allows you to specify the code to run as an argument, rather than 
 
 The `-n` flag creates an implicit loop, meaning that the code you provide will run for as long as there is input, ensuring that all input is captured.
 
+The script that we pass in uses `chomp` to trim whitespace off the end of the request, then escapes the input so that it safe to put into a URL. The `$_` is a special variable that is implicitly assigned the value of what came via stdin in this case.
+
 {% highlight bash %}
 ... perl -MURI::Escape -ne 'chomp;print uri_escape($_)') ...
 {% endhighlight %}
