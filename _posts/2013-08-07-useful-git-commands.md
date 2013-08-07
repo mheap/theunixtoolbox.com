@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Useful git commits
+title: Useful git commands
 date: 2013-08-07
 ---
 
@@ -12,7 +12,7 @@ However, to get 90% of the way there, you only need to know a handful of command
 I'm not going to cover these as you can find information about them everywhere. add/commit/push/pull are the cornerstones of `git`, so you need to understand them to do anything else.
 
 ### git checkout <file> <rev>
-Revert a file to a certain point in time. If you specify a revision (this can be a commit hash, a tag name r a branch name) it will show the file as it looked at that commit.
+Revert a file to a certain point in time. If you specify a revision (this can be a commit hash, a tag name or a branch name) it will show the file as it looked at that commit.
 
 My main use case however, is when I've made lots of changes to various files (generally whilst debugging) then I want to discard them all. It's as simple as typing:
 
