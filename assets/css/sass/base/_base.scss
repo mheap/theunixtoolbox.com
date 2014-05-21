@@ -190,3 +190,9 @@ small,
 p, blockquote, ul, ol, dl, menu {
   margin: 0 0 $base-line-height + em;
 }
+
+blockquote {
+  font-style: italic;
+  border-left: 0.5em solid $brand-secondary;
+  padding-left: 0.5em;
+}
