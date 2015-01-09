@@ -8,6 +8,8 @@ Whitespace is like `git diff`'s krypton, it makes changes that are actually tiny
 
 The first option is `--ignore-space-at-eol`. This flag makes `git diff` ignore any changes to whitespace at the end of a line. Most developers have options to automatically trim trailing whitespace, but if you're working in a team that doesn't have it enabled you might find this option useful.
 
+<hr />
+
 {% highlight bash %}
   git diff --ignore-space-at-eol
 {% endhighlight %}

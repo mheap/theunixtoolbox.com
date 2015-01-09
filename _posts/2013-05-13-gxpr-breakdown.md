@@ -11,6 +11,8 @@ First, we add a [shebang](http://en.wikipedia.org/wiki/Shebang_(Unix\)) to give 
 #!/bin/sh
 {% endhighlight %}
 
+<hr />
+
 The we set up a couple of variables. The first is the `curl` command that we want to use. The second and third are URL's that we're going to pass in as parameters at a later date
 {% highlight bash %}
 CURL='curl -s --header User-Agent:gxpr/1.0'

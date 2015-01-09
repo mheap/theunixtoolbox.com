@@ -12,6 +12,8 @@ specific details that you're looking for.
 work. It has [all kinds of options available](http://stedolan.github.io/jq/manual/#Invokingjq), but I
 tend to use it just for filtering data.
 
+<hr />
+
 My most common use case is this:
 
 {% highlight bash %}

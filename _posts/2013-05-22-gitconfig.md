@@ -11,6 +11,8 @@ identification, but there's loads more that you can set up.
 Below, is a (mostly complete) copy of my `~/.gitconfig` file. As well as identifying myself, I've 
 added a few useful aliases, added colouring and configured which utilities to use for common actions.
 
+<hr />
+
 My favourite option is probably "help.autocorrect". Without it, git suggests a command close to 
 the one you typed, but makes you type it yourself. With this enabled, it just runs it:
 

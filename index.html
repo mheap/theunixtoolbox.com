@@ -4,15 +4,18 @@ title: The Unix Toolbox
 ---
 
 {% for post in site.posts %}
+{% if forloop.index <= 5 %}
 
   <article class="post">
     <header>
-      <time class="post__date" datetime="2012-08-17" pubdate="">{{ post.date | date_to_long_string }}</time>
+      <time class="post__date" datetime="{{ post.date }}" pubdate="">{{ post.date | date: "%d %b %Y" }}</time>
       <h1 class="post__title">
         <a href="{{ post.url }}" title="Permanent link to: '{{ post.title }}'">{{ post.title }}</a>
       </h1>
     </header>
-    {{ post.content }}
+    {{ post.excerpt }}
+    <a href="{{post.url}}">[ Read More ]</a>
   </article>
 
+{% endif %}
 {% endfor %}

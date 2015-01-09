@@ -8,6 +8,8 @@ Git's a fantastic tool. If you know what you're doing, you can pretty much do an
 
 However, to get 90% of the way there, you only need to know a handful of commands.
 
+<hr />
+
 ### git add/commit/push/pull
 I'm not going to cover these as you can find information about them everywhere. add/commit/push/pull are the cornerstones of `git`, so you need to understand them to do anything else.
 

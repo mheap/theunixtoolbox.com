@@ -8,6 +8,8 @@ A few weeks ago, almost everyone on Twitter was sharing [Explain Shell](http://e
 
 There are a few examples on the homepage, I particularly like  [tar xzvf archive.tar.gz](http://explainshell.com/explain/tar?args=xzvf+archive.tar.gz) and [ssh  -i keyfile -f -N -L 1234:www.google.com:80 host](http://explainshell.com/explain/ssh?args=-i+keyfile+-f+-N+-L+1234%3Awww.google.com%3A80+host).
 
+<hr />
+
 Now, whilst you can copy and paste a command you're working on into the site, wouldn't it be awesome if you could trigger it from your command line? Thanks to Schneems, [you can!](http://schneems.com/post/61514247453/explain-shell-from-your-shell). I prefer the [shell version](https://github.com/schneems/explain_shell#without-rubygems), so add the following to your `.bashrc` (or `.zshrc` etc) and then next time you want to see what a command does, just add `explain` to the beginning of it.
 
 {% highlight bash %}

@@ -9,7 +9,7 @@ _This article originally appeared in the December 2013 issue of [PHP Architect](
 > The beauty of a Unix-based operating system is that it has a multitude of useful tools that most people don't know about. You can use them on their own, chain them together, you can do almost anything you can think of.
 
 We'll take a look at some popular tools and some lesser known gems. As well as tools, we'll cover tips and tweaks for making your command line do all the work so that you don't have to. From search and replace to installing software without having to find it first, the command line can do it all!
-
+<hr />
 ## The Unix Philosophy
 The thing about Unix is that you can use as much or as little as you need. I think Doug McIlroy said it best:
 
