@@ -36,7 +36,7 @@ There are nine possible aliases, some of which are just aliases for each other (
 | @midnight | Same as @daily       | 0 0 * * *        |
 | @hourly   | Run once an hour     | 0 * * * *        |
 
-I'm not sure I'd recommend using any of these (except maybe `@reboot`) as the standard syntax is well known by anyone that should be editing a crontab, but it's interesting to know that there are aliases in there for common time periods.jJ;w
+I'm not sure I'd recommend using any of these (except maybe `@reboot`) as the standard syntax is well known by anyone that should be editing a crontab, but it's interesting to know that there are aliases in there for common time periods.
 
 
 (via [mkaz (now offline)](https://mkaz.com/2006/05/29/unix-crontab/))
