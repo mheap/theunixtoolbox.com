@@ -1,0 +1,25 @@
+---
+title: Installing Golang
+layout: post
+date: 2015-10-19
+permalink: /environment/golang/
+---
+
+<p>A lot of new CLI tools depend on a `golang` install.</p>
+
+<h3>Installing on Ubuntu</h3>
+
+Assuming that you're running as the vagrant user
+{% highlight bash %}
+mkdir /home/vagrant/gocode
+echo "export PATH=/home/vagrant/gocode/bin:$PATH >> /home/vagrant/.bashrc"
+source /home/vagrant/.bashrc
+sudo apt-get install golang
+{% endhighlight %}
+
+<h3>Ensuring it works</h3>
+
+{% highlight bash %}
+go --help
+{% endhighlight %}
+
