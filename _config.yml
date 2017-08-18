@@ -7,3 +7,5 @@ name: The Unix Toolbox
 description: Tools + tricks from the *nix command line that are so good, you'll wonder how you ever lived without them
 link: http://theunixtoolbox.com
 excerpt_separator: "<hr />"
+plugins:
+  - jekyll-redirect-from
